@@ -9,7 +9,7 @@ class Services {
     final response = await http.get(CONSTANTS.HOME_SERVICE_URL);
     if (response.statusCode == 200) {
       List<Booklist> list = parsePostsForHome(response.body);
-      print("###reponse::");
+      print("###reponse:::");
       print(list);
       return list;
     } else {
